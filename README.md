@@ -102,4 +102,4 @@ Reports include: test results, feature breakdown, step-by-step screenshots, and 
 ## 👨‍💻 Author
 
 **Umair Zahid** — SDET  
-📧 aumair525@gmail.com | 🔗 [LinkedIn](https://linkedin.com/in/umair-zahid)
+📧 aumair525@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/umairzahid2000/)
