@@ -37,4 +37,8 @@ public class LoginPage extends BasePage {
     public boolean isErrorDisplayed() {
         return isElementDisplayed(ERROR_MESSAGE);
     }
+
+    public boolean isLoginButtonDisplayed() {
+        return isElementDisplayed(LOGIN_BUTTON);
+    }
 }

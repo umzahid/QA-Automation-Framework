@@ -65,8 +65,7 @@ public class SauceDemoSteps extends PageObject {
 
     @Then("the user should be redirected to the login page")
     public void theUserRedirectedToLogin() {
-        Assertions.assertTrue(loginPage.isElementDisplayed(
-                org.openqa.selenium.By.id("login-button")),
+        Assertions.assertTrue(loginPage.isLoginButtonDisplayed(),
                 "Expected login button to be visible after logout");
     }
 }
