@@ -14,23 +14,23 @@ import java.time.Duration;
  */
 public abstract class BasePage extends PageObject {
 
-    private WebDriverWait wait() {
+    private WebDriverWait getWait() {
         return new WebDriverWait(getDriver(),
                 Duration.ofSeconds(ConfigManager.getInt("explicit.wait")));
     }
 
     protected void waitAndClick(By locator) {
-        wait().until(ExpectedConditions.elementToBeClickable(locator)).click();
+        getWait().until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
     protected void waitAndType(By locator, String text) {
-        WebElement el = wait().until(ExpectedConditions.visibilityOfElementLocated(locator));
+        WebElement el = getWait().until(ExpectedConditions.visibilityOfElementLocated(locator));
         el.clear();
         el.sendKeys(text);
     }
 
     protected String waitAndGetText(By locator) {
-        return wait().until(ExpectedConditions.visibilityOfElementLocated(locator)).getText().trim();
+        return getWait().until(ExpectedConditions.visibilityOfElementLocated(locator)).getText().trim();
     }
 
     protected boolean isElementDisplayed(By locator) {
