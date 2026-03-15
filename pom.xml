@@ -8,7 +8,7 @@
     <artifactId>qa-automation-framework</artifactId>
     <version>1.0.0</version>
 
-    <n>QA Automation Framework</n>
+    <name>QA Automation Framework</name>
     <description>BDD test automation framework using Selenium + Cucumber + Serenity with Page Object Model</description>
 
     <properties>
