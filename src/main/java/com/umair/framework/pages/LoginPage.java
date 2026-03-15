@@ -1,12 +1,10 @@
 package com.umair.framework.pages;
 
-import net.serenitybdd.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 
 /**
  * Page Object for the SauceDemo login page.
  */
-@DefaultUrl("https://www.saucedemo.com/")
 public class LoginPage extends BasePage {
 
     private static final By USERNAME_FIELD  = By.id("user-name");

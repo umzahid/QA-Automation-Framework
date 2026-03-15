@@ -17,7 +17,7 @@ public class SauceDemoSteps extends PageObject {
 
     @Given("the user is on the login page")
     public void theUserIsOnTheLoginPage() {
-        loginPage.open();
+        loginPage.openAt("https://www.saucedemo.com/");
     }
 
     @When("the user logs in with username {string} and password {string}")
@@ -42,7 +42,7 @@ public class SauceDemoSteps extends PageObject {
 
     @Given("the user is logged in as {string} with password {string}")
     public void theUserIsLoggedIn(String username, String password) {
-        loginPage.open();
+        loginPage.openAt("https://www.saucedemo.com/");
         loginPage.loginAs(username, password);
         Assertions.assertTrue(inventoryPage.isLoaded(), "Login failed — inventory page not visible");
     }
